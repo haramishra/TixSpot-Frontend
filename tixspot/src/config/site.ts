@@ -9,6 +9,14 @@ export const siteConfig = {
       title: "Home",
       href: "/",
     },
+    {
+      title: "Events",
+      href: "/events",
+    },
+    {
+      title: "Artists",
+      href: "/artists",
+    },
   ],
   links: {
     twitter: "",
