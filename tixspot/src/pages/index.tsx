@@ -20,7 +20,7 @@ export default function IndexPage() {
       <div>
         <Input type="email" placeholder="Email" className="w-[30%]" />
       </div>
-      <div className="flex gap-4">
+      {/* <div className="flex gap-4">
         <Link
           href={siteConfig.links.docs}
           target="_blank"
@@ -37,7 +37,7 @@ export default function IndexPage() {
         >
           GitHub
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import {Icons} from "../components/icons"
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
@@ -39,9 +40,12 @@ export const siteConfig = {
     },
   ],
 
-  links: {
-    twitter: "",
-    github: "",
-    docs: "",
-  },
+  links: [
+    {
+      title: "Instagram",
+      href: "/",
+      icon: Icons.Instagram
+    },
+  ],
+  
 }
