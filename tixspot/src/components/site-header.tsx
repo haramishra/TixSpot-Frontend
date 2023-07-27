@@ -6,6 +6,8 @@ import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { CommandMenu } from "./search/command-box"
+import { ListLinks } from "./list-links"
+import { ListSocials } from "./list-socials"
 
 export function SiteHeader() {
   return (
@@ -15,36 +17,8 @@ export function SiteHeader() {
         <div className="flex flex-1 items-center justify-end space-x-4"><CommandMenu/></div> 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className={buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })}
-              >
-                <Icons.gitHub className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </div>
-            </Link>
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className={buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })}
-              >
-                <Icons.twitter className="h-5 w-5 fill-current" />
-                <span className="sr-only">Twitter</span>
-              </div>
-            </Link>
+          <ListLinks items={siteConfig.rightNav} />
+          <ListSocials items={siteConfig.links} />
             <ThemeToggle />
           </nav>
         </div>
