@@ -6,6 +6,7 @@ import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { CommandMenu } from "./search/command-box"
+import { ListLinks } from "./list-links"
 
 export function SiteHeader() {
   return (
@@ -15,6 +16,7 @@ export function SiteHeader() {
         <div className="flex flex-1 items-center justify-end space-x-4"><CommandMenu/></div> 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
+          <ListLinks items={siteConfig.rightNav} />
             <Link
               href={siteConfig.links.github}
               target="_blank"
